@@ -2,5 +2,9 @@
 <resources>
     <attr name="buttonImageColor" format="color">
     </attr>
+    <attr name="panelBackgroundColor" format="color">
+    </attr>
+    <attr name="colorBackground" format="color">
+    </attr>
 
 </resources>

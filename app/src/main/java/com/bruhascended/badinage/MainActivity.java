@@ -317,7 +317,6 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
             downloadFile(r13, r15)
             goto L_0x0058
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.chirag.kalra.badinage.MainActivity.createSoundnVibration(java.lang.String, java.lang.String, int, android.view.View):void");
     }
 
     private static void downloadFile(String body, final View asa) {

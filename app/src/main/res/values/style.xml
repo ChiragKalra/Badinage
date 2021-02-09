@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Light" parent="Theme.MaterialComponents.DayNight"/>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:navigationBarColor">@color/colorSecondary</item>
+        <item name="buttonImageColor">#fff</item>
+        <item name="colorBackground">@color/background</item>
+        <item name="panelBackgroundColor">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.Splash" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.load" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
 </resources>
