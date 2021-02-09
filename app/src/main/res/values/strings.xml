@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="search_menu_title">Search</string>
+    <string name="Notifications">Notifications</string>
+    <string name="app_name">Badinage</string>
+    <string name="chat">Chat</string>
+    <string name="conti">Continue</string>
+    <string name="email">e-mail</string>
+    <string name="password">Password</string>
+    <string name="post">Post</string>
+    <string name="proceed">Sign In</string>
+    <string name="sign_up">New user? Sign Up Here</string>
+    <string name="type_message_here">Type Message Here</string>
+</resources>

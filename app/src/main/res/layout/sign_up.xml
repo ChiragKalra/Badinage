@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="#fafafa" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sign_back" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="3dp" android:backgroundTint="#e0e0e0">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText  android:id="@+id/username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:hint="Full Name" android:inputType="none|text|textCapWords|textNoSuggestions|textEmailAddress|textShortMessage|textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText  android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:hint="@string/email" android:inputType="none|text|textNoSuggestions|textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_visibility_black" android:onClick="showPass" android:layout_marginEnd="5dp" android:elevation="1dp"/>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+                <com.google.android.material.textfield.TextInputEditText  android:id="@+id/Password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password" android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/conti" android:onClick="OnContinue" android:backgroundTint="@color/colorAccent"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/progBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Check e-mail to proceed" android:textAlignment="center"/>
+</LinearLayout>

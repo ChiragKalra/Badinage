@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lol" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/chat_background" android:scaleType="centerCrop" android:translationY="13dp" android:scaleY="1.116"/>
+    <ImageView android:id="@+id/appico" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:src="@drawable/ic_launcher" android:layout_centerInParent="true" android:alpha="1" android:elevation="3dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/amim" android:background="#fafafa" android:padding="15dp" android:layout_width="match_parent" android:layout_height="320dp" android:layout_alignParentBottom="true" android:translationY="320dp" android:elevation="5dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sign_back" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:elevation="3dp" android:backgroundTint="#e0e0e0">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email" android:inputType="none|text|textNoSuggestions|textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_visibility_black" android:onClick="showPass" android:layout_marginEnd="5dp" android:elevation="1dp"/>
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" style="?android:attr/buttonBarStyle">
+                    <com.google.android.material.textfield.TextInputEditText  android:id="@+id/Password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Password" android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </FrameLayout>
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/proceed" android:onClick="UserSignIn" android:elevation="3dp" android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="13sp" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_up" android:onClick="openSignUp" style="?android:attr/buttonBarButtonStyle"/>
+            <Button android:textSize="13sp" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Forgot Password" android:onClick="forgotPassword" style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

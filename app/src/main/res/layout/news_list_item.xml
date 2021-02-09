@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/news_item_back" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" android:elevation="1dp" android:backgroundTint="@color/c">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/primaryTextColor" android:id="@+id/person_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Person Name" android:layout_marginStart="5dp"/>
+        <TextView android:textSize="18sp" android:textColor="@color/primaryTextColor" android:id="@+id/news" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="latest news will be shown here" android:layout_below="@+id/person_name" android:fontFamily="casual" android:layout_marginStart="5dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/secondaryTextColor" android:id="@+id/date_poss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="11:29|30/5/2017" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

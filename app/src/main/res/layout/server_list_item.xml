@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/server_select" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <RelativeLayout android:id="@+id/hid" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/loda" android:background="@drawable/edittextback" android:padding="6dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_group_black_24dp" app:tint="#fff" android:layout_marginStart="6dp" android:layout_marginEnd="7dp" android:backgroundTint="@color/colorSecondary"/>
+        <TextView android:textSize="14sp" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_locked" android:text="loading..." android:layout_alignTop="@+id/loda" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#e91e63" android:id="@+id/serverName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="loading..." android:layout_marginStart="10dp" android:layout_toEndOf="@+id/loda"/>
+        <ImageView android:id="@+id/locked" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_locked" android:layout_marginStart="7dp" android:layout_toEndOf="@+id/serverName"/>
+        <TextView android:textSize="16sp" android:textColor="@color/secondaryTextColor" android:id="@+id/serverPeople" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="loading..." android:layout_below="@+id/serverName" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/loda"/>
+        <TextView android:id="@+id/eas" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

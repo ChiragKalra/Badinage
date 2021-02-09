@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#fafafa" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <Switch android:textSize="18sp" android:textColor="@color/secondaryTextColor" android:id="@+id/volume" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:checked="true" android:text="Sound And Vibration"/>
+    <Switch android:textSize="18sp" android:textColor="@color/secondaryTextColor" android:id="@+id/notify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:checked="true" android:text="@string/Notifications"/>
+    <Switch android:textSize="18sp" android:textColor="@color/secondaryTextColor" android:id="@+id/notifySound" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:checked="true" android:text="Notification Sounds"/>
+    <Switch android:textSize="18sp" android:textColor="@color/secondaryTextColor" android:id="@+id/showTabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:checked="false" android:text="Hide Tabs"/>
+    <Switch android:textSize="18sp" android:textColor="@color/secondaryTextColor" android:id="@+id/bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:checked="false" android:text="Custom Background"/>
+    <Button android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Sign Out" android:onClick="signOut"/>
+</LinearLayout>
